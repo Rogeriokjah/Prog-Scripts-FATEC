@@ -54,4 +54,11 @@ npm run dev
 ✅ Adicionar uma opção de troca de cores do tabuleiro
 ✅ Implementar movimentação das peças
 
+## 🔥 Tema Inferno Adicionado!
+Agora o tabuleiro tem um **visual infernal**:
+- Casas claras agora são vermelhas **ardentes** 🔥
+- Casas escuras são **chamas sombrias** 🖤🔥
+- Peças brancas agora são **brilhos espectrais** 👻
+- Peças pretas agora são **rochas vulcânicas** 🌋
+
 Agora é só rodar e testar! Se precisar de ajuda, me avise! 🚀♟️

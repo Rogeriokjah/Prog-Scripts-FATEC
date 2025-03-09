@@ -11,9 +11,9 @@ const GlobalStyles = createGlobalStyle`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #282c34;
+    background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Courier New", monospace;
   }
   .container {
     text-align: center;

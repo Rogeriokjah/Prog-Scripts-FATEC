@@ -6,9 +6,9 @@ const SquareStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ isDark }) => (isDark ? "#764c24" : "#f5d6b4")};
+  background-color: ${({ isDark }) => (isDark ? "#400000" : "#ff4500")};
   &:hover {
-    background-color: ${({ isDark }) => (isDark ? "#5a3a1b" : "#e2c3a1")};
+    background-color: ${({ isDark }) => (isDark ? "#600000" : "#ff6347")};
   }
 `;
 
