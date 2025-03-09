@@ -18,7 +18,7 @@ export default function Board() {
     for (let row = 0; row < 8; row++) {
       for (let col = 0; col < 8; col++) {
         const isDark = (row + col) % 2 === 1;
-        const hasPiece = row < 3 || row > 4;
+        const hasPiece = isDark && (row < 3 || row > 4); // Apenas nas casas escuras
         const isWhite = row < 3;
         squares.push(
           <Square key={`${row}-${col}`} isDark={isDark}>
