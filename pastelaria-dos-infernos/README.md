@@ -49,3 +49,4 @@ O layout foi desenvolvido com foco em dispositivos móveis e desktops:
 - **React** com **TypeScript**
 - CSS customizado (`globals.css`)
 - Hooks React para controle de estado
+____
