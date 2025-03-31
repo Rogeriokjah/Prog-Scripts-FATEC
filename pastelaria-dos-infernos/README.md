@@ -50,3 +50,21 @@ O layout foi desenvolvido com foco em dispositivos móveis e desktops:
 - CSS customizado (`globals.css`)
 - Hooks React para controle de estado
 ____
+
+## 🧑‍💻 Rodando o projeto localmente
+
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/Prog_Scripts_FATEC.git
+
+# Acessar a pasta do projeto
+cd Prog_Scripts_FATEC
+
+# Trocar para a branch correta
+git checkout "Pastelaria dos Infernos"
+
+# Instalar dependências
+npm install
+
+# Rodar localmente
+npm run dev
