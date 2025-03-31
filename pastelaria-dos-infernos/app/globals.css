@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8e1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: #fffde7;
+  padding: 20px;
+  border-bottom: 2px solid #ffcc80;
+  font-size: 24px;
+}
+
+.admin-button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffe082;
+  border: none;
+  border-radius: 8px;
+}
+
+.ingredient-selector {
+  padding: 10px 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+.ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ingredient-checkbox {
+  background: #fff;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.menu-item:hover {
+  transform: scale(1.03);
+}
+
+.menu-item img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-item.unavailable {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
