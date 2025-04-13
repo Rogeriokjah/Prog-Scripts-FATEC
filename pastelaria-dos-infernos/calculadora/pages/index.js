@@ -4,6 +4,7 @@ import Keypad from '../components/Keypad';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const [isDemente, setIsDemente] = useState(false);
   const [display, setDisplay] = useState('0');
   const [memory, setMemory] = useState(0);
   const [operator, setOperator] = useState(null);
@@ -20,8 +21,17 @@ export default function Home() {
   };
 
   const handleOperation = (op) => {
+    let realOp = op;
+    if (isDemente) {
+      switch (op) {
+        case '+': realOp = '*'; break;
+        case '-': realOp = '+'; break;
+        case '*': realOp = '/'; break;
+        case '/': realOp = '-'; break;
+      }
+    }
     setOperand(parseFloat(display));
-    setOperator(op);
+    setOperator(realOp);
     setIsNewInput(true);
   };
 
@@ -61,6 +71,21 @@ export default function Home() {
 
   return (
     <div className={styles.calculator}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+        <span className={styles.neon}>clica aqui logo</span>
+        <label htmlFor="modoDemente">Modo Demente</label>
+        <input
+          id="modoDemente"
+          type="checkbox"
+          checked={isDemente}
+          onChange={(e) => setIsDemente(e.target.checked)}
+          title="Modo Demente Ativado:
+                × vira ÷
+                ÷ vira −
+                − vira +
+                + vira ×"
+        />
+      </div>
       <h1 className={styles.title}>Calculadora Demente</h1>
       <Display value={display} operator={operator} operand={operand} />
       <Keypad
