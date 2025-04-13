@@ -36,6 +36,7 @@ export default function Home() {
         case '/': result = operand / current; break;
       }
       setDisplay(result.toString());
+      setIsNewInput(true);
       setOperand(null);
       setOperator(null);
     }
