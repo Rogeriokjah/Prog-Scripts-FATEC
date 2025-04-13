@@ -1,0 +1,100 @@
+.calculator {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #666;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-family: monospace;
+  color: #00ff99;
+  margin-bottom: 20px;
+}
+
+.display {
+  background: black;
+  color: #00ff99;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: inset 0 0 5px #00ff99;
+  text-align: right;
+}
+
+.display .operation {
+  font-size: 1.2rem;
+  color: #00ffaa;
+  height: 1.5rem;
+}
+
+.display .result {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 5px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+.equals {
+  grid-column: span 1;
+  background-color: #00ff99 !important;
+  color: black !important;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.half {
+  grid-column: span 1;
+}
+
+.clears {
+  grid-column: span 2;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.neon {
+  color: #00ffcc;
+  font-size: 1.1rem;
+  animation: flicker 1.2s infinite alternate;
+  text-shadow:
+    0 0 5px #00ffee,
+    0 0 10px #00ffee,
+    0 0 20px #00ffee,
+    0 0 40px #0ff;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; transform: scale(1.02); }
+  100% { opacity: 1; }
+}
