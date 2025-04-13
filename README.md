@@ -1,6 +1,7 @@
 # 🧠 Calculadora Demente
 
-Uma calculadora feita em **Next.js** com um **modo insano de operação**. Perfeita para quem está cansado da matemática tradicional e quer dar um toque de caos nos cálculos do dia a dia.
+Uma calculadora feita em **Next.js** com um **modo insano de operação**. 
+Perfeita para quem está cansado da matemática tradicional e quer dar um toque de caos nos cálculos do dia a dia.
 
 ## 🚀 Funcionalidades
 
@@ -20,8 +21,8 @@ Uma calculadora feita em **Next.js** com um **modo insano de operação**. Perfe
 
 1. Clone o projeto:
 
-    git clone https://github.com/seu-usuario/calculadora-demente.git
-    cd calculadora-demente
+    git clone https://github.com/Rogeriokjah/Prog-Scripts-FATEC/tree/calculadora-demente-final
+    cd calculadora
 
 2. Instale as dependências:
     npm install
@@ -30,6 +31,8 @@ Uma calculadora feita em **Next.js** com um **modo insano de operação**. Perfe
     npm run dev
 
 Acesse em: http://localhost:3000
+
+
 🧪 Estrutura dos componentes
 - Display.js: mostra o valor atual e a operação em curso
 - Keypad.js: grade com todos os botões
