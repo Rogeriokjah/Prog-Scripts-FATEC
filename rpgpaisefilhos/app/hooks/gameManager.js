@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function gameManager() {
   const initialHero = { life: 100, name: "Pai Desesperado", type: "hero" };
-  const initialVillain = { life: 120, name: "Bebê Indomável", type: "villain" };
+  const initialVillain = { life: 100, name: "Bebê Indomável", type: "villain" };
 
   const [hero, setHero] = useState(initialHero);
   const [villain, setVillain] = useState(initialVillain);
@@ -63,7 +63,7 @@ export default function gameManager() {
 
       modifyLife("villain", -damage);
       addHistory(`Papai tentou trocar a fralda! -${damage} de vida no bebê.`);
-      playSoundWithLock("PaiCansado.mp3", () => {
+      playSoundWithLock("PaiNaMerda.mp3", () => {
         if (villain.life > 0) babyTurn();
       });
     },
